@@ -27,16 +27,16 @@ the examples hereafter show how this can be done using the `-v` parameter for Do
 ## RDF to HDT
 Convert an RDF file to HDT:
 ```bash
-$ docker run -it --rm -v $(pwd):/data rfdhdt/hdt-cpp rdf2hdt -f turtle /data/myfile.turtle /data/myfile.hdt
+$ docker run -it --rm -v "$(pwd)":/data rfdhdt/hdt-cpp rdf2hdt -f turtle /data/myfile.turtle /data/myfile.hdt
 ```
 
 ## HDT to RDF
 ```bash
-$ docker run -it --rm -v $(pwd):/data rfdhdt/hdt-cpp hdt2rdf -f turtle /data/myfile.hdt /data/myfile.turtle
+$ docker run -it --rm -v "$(pwd)":/data rfdhdt/hdt-cpp hdt2rdf -f turtle /data/myfile.hdt /data/myfile.turtle
 ```
 
 ## HDT search
 ```bash
-$ docker run -it --rm -v $(pwd):/data rfdhdt/hdt-cpp hdtSearch /data/myfile.hdt
+$ docker run -it --rm -v "$(pwd)":/data rfdhdt/hdt-cpp hdtSearch /data/myfile.hdt
 ```
 
